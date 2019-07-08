@@ -1,0 +1,49 @@
+{
+  "name": "Slick Carousel",
+  "group": "layouts",
+  "attribute_definition_groups": [
+    {
+      "id": "slider_spec",
+      "name": "Slider Specifications",
+      "description": "Specify the title for the Slider.",
+      "attribute_definitions": [
+        {
+          "id": "slider_headline",
+          "name": "Slider Name",
+	        "description": "The text overlay to be displayed",
+          "type": "string",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "region_definitions": [
+    {
+      "id": "slides",
+      "name": "Slides",
+      "component_type_exclusions": [
+        {
+          "type_id": "layouts.1column"
+        },
+        {
+          "type_id": "layouts.2column"
+        },
+        {
+          "type_id": "layouts.3column"
+        },
+        {
+          "type_id": "layouts.4column"
+        },
+        {
+          "type_id": "layouts.gridcomponentlayout"
+        },
+        {
+          "type_id": "einstein.noanchorgrid"
+        },
+        {
+          "type_id": "layouts.carousel"
+        }
+      ]
+    }
+  ]
+}

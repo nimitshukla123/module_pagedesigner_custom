@@ -1,0 +1,49 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<isdecorate template="${pdict.decorator}">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/layout.css');
+        assets.addCss('/css/pagedesigner-bootstrap.min.css');
+        assets.addJs('/js/jquery-3.3.1.min.js');
+        assets.addCss('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css');
+        assets.addCss('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css');
+        assets.addJs('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js');
+        assets.addCss('/css/slick.css');
+        assets.addJs('/js/slick.js');
+    </isscript>
+    <!--- the page markup --->
+    <isif condition="${!empty(pdict.regions.region1.region.visibleComponents.length > 0) && pdict.regions.region1.region.visibleComponents[0].typeID.indexOf('fullWidthBanner') > -1}" >
+    	<div id="${pdict.page.ID}">
+		    <div class="container-fluid px-0 page-designer-reference">
+			    <div class="">
+			    	<isprint value="${pdict.regions.region1.setClassName("region region_landscape-large col-12 col-md-12 px-0").render()}" encoding="off"/>
+			    </div>
+		    </div>
+		    
+		    <div class="container-fluid page-container px-2 page-designer-reference">
+		        <div class="row mx-n2">
+		            <isprint value="${pdict.regions.region2.setClassName("region region_landscape-large col-12 col-md-12 px-2").render()}" encoding="off"/>
+		            <isprint value="${pdict.regions.region3.setClassName("region region_square col-12 col-md-4 px-2").render()}" encoding="off"/>
+		            <isprint value="${pdict.regions.region4.setClassName("region region_square col-12 col-md-4 px-2").render()}" encoding="off"/>
+		            <isprint value="${pdict.regions.region5.setClassName("region region_square col-12 col-md-4 px-2").render()}" encoding="off"/>
+		            <isprint value="${pdict.regions.region6.setClassName("region region_landscape-large col-12 col-md-12 px-2").render()}" encoding="off"/>
+                    <isprint value="${pdict.regions.region7.setClassName("region region_landscape-large col-12 col-md-12 px-2").render()}" encoding="off"/>
+					<isprint value="${pdict.regions.region8.setClassName("region region_landscape-large col-12 col-md-12 px-2").render()}" encoding="off"/>
+		        </div>
+		    </div>
+    	</div>
+    <iselse/>
+    	<div class="container-fluid page-container px-2 page-designer-reference">
+	        <div id="${pdict.page.ID}" class="row mx-n2">
+	            <isprint value="${pdict.regions.region1.setClassName("region region_landscape-large col-12 col-md-12 px-2").render()}" encoding="off"/>
+	            <isprint value="${pdict.regions.region2.setClassName("region region_landscape-large col-12 col-md-12 px-2").render()}" encoding="off"/>
+                <isprint value="${pdict.regions.region3.setClassName("region region_square col-12 col-md-4 px-2").render()}" encoding="off"/>
+                <isprint value="${pdict.regions.region4.setClassName("region region_square col-12 col-md-4 px-2").render()}" encoding="off"/>
+                <isprint value="${pdict.regions.region5.setClassName("region region_square col-12 col-md-4 px-2").render()}" encoding="off"/>
+                <isprint value="${pdict.regions.region6.setClassName("region region_landscape-large col-12 col-md-12 px-2").render()}" encoding="off"/>
+                <isprint value="${pdict.regions.region7.setClassName("region region_landscape-large col-12 col-md-12 px-2").render()}" encoding="off"/>
+				<isprint value="${pdict.regions.region8.setClassName("region region_landscape-large col-12 col-md-12 px-2").render()}" encoding="off"/>
+	        </div>
+    	</div>
+    </isif>
+</isdecorate>

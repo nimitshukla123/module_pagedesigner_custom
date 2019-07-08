@@ -1,0 +1,23 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+</isscript>
+
+<div id="${pdict.id}">
+    <isscript>
+        var carouselRegion = pdict.regions.slides;
+        carouselRegion.setClassName("slick-carousel");
+        // mark all pages as carousel 
+        //carouselRegion.setComponentClassName("carousel-item");
+        // set first slide active
+        //carouselRegion.setComponentClassName("carousel-item active", {position: 0});
+    </isscript>
+    <div class="slider_hext_heading">
+        <isprint value="${pdict.headline}"/>
+    </div>
+
+    <isprint value="${carouselRegion.render()}" encoding="off"/>
+
+    
+</div>
+
+
