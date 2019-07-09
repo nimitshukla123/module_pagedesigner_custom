@@ -57,3 +57,11 @@
   left: 0px !important;
   right: 0px !important;
 }
+
+.experience-assets-fullWidthVideo .full-width-video {
+  height: 556px;
+  object-fit: fill;
+}
+
+
+

@@ -2,9 +2,10 @@
     var assets = require('*/cartridge/scripts/assets.js');
     assets.addCss('/css/fullWidthVideo.css');
     assets.addCss('/css/component.css');
+    assets.addJs('/js/fullWidthVideo.js');
 </isscript>
 <figure class="component-figure">
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100 full-width-video">
         <source src="${pdict.video_url}" type="video/mp4">
     </video>
     <figcaption class="headlinebanner-text_container" style="text-align: left">
