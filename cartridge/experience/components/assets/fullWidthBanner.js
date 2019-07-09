@@ -17,10 +17,13 @@ module.exports.render = function (context) {
     }
 
     if (content.image) {
+        var mobileImageTransformation = ImageTransformation.scale(content.image.metaData, 'mobile');
+        var desktopImageTransformation = ImageTransformation.scale(content.image.metaData, 'desktop');
+
         model.image = {
             src: {
-                mobile  : ImageTransformation.url(content.image, { device: 'mobile' }),
-                desktop : ImageTransformation.url(content.image, { device: 'desktop' })
+                mobile  : ImageTransformation.url(content.image.file, mobileImageTransformation),
+                desktop : ImageTransformation.url(content.image.file, desktopImageTransformation)
             },
             alt         : content.image.file.getAlt(),
             focalPointX : content.image.focalPoint.x * 100 + '%',
