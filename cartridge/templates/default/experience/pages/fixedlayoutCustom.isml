@@ -12,7 +12,8 @@
         assets.addJs('/js/slick.js');
     </isscript>
     <!--- the page markup --->
-    <isif condition="${!empty(pdict.regions.region1.region.visibleComponents.length > 0) && pdict.regions.region1.region.visibleComponents[0].typeID.indexOf('fullWidthBanner') > -1}" >
+	<isset value="${pdict.regions.region1.region.visibleComponents}" name="region1VisibleComponent" scope="page" />
+    <isif condition="${!empty(region1VisibleComponent.length > 0) && (region1VisibleComponent[0].typeID.indexOf('fullWidthBanner') > -1 || region1VisibleComponent[0].typeID.indexOf('fullWidthVideo') > -1)}" >
     	<div id="${pdict.page.ID}">
 		    <div class="container-fluid px-0 page-designer-reference">
 			    <div class="">

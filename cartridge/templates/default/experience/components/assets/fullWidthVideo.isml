@@ -1,0 +1,21 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/fullWidthVideo.css');
+    assets.addCss('/css/component.css');
+</isscript>
+<figure class="component-figure">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100">
+        <source src="${pdict.video_url}" type="video/mp4">
+    </video>
+    <figcaption class="headlinebanner-text_container" style="text-align: left">
+        <div class="headlinebanner-text headlinebanner-text_heading">
+            <span class="headlinebanner-wrap"><isprint value="${pdict.text_headline}" encoding="off"/></span>
+        </div>
+
+        <isif condition="${pdict.text_subline}">
+            <div class="headlinebanner-text headlinebanner-text_subheading">
+                <span class="headlinebanner-wrap"><isprint value="${pdict.text_subline}" encoding="off"/></span>
+            </div>
+        </isif>
+    </figcaption>
+</figure>
