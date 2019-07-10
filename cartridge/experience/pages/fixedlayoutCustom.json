@@ -1,6 +1,6 @@
 {
     "name":"5 Row Page Layout With Full Width",
-    "description":"Pre-defined set of regions to place your images and text to create the page design",
+    "description":"Pre-defined set of regions to place your images and text to create the page design and containes 1st region as a full width section.",
     "region_definitions":[
       {
         "id":"region1",
