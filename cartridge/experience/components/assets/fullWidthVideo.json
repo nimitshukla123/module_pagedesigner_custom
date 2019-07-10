@@ -6,7 +6,7 @@
     {
       "id": "backgroundVideo",
       "name": "Background",
-      "description": "The visual display of the banner image in the background.",
+      "description": "The visual display of the banner video in the background. Only mp4 format supported",
       "attribute_definitions": [
         {
           "id": "video",
@@ -32,6 +32,25 @@
           "id": "text_headline",
           "name": "Heading",
           "type": "markup",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "settings",
+      "name": "Video Settings",
+      "description": "settings configured for banner",
+      "attribute_definitions": [
+        {
+          "id": "height_desktop",
+          "name": "Height For Desktop",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": "height_mobile",
+          "name": "Height For Mobile",
+          "type": "string",
           "required": false
         }
       ]
