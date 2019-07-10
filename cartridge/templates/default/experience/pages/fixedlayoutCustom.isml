@@ -5,11 +5,6 @@
         assets.addCss('/css/layout.css');
         assets.addCss('/css/pagedesigner-bootstrap.min.css');
         assets.addJs('/js/jquery-3.3.1.min.js');
-        assets.addCss('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css');
-        assets.addCss('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css');
-        assets.addJs('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js');
-        assets.addCss('/css/slick.css');
-        assets.addJs('/js/slick.js');
     </isscript>
     <!--- the page markup --->
     <isset value="${pdict.regions.region1.region.visibleComponents}" name="region1VisibleComponent" scope="page" />
