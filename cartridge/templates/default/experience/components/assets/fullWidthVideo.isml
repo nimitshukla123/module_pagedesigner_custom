@@ -6,8 +6,9 @@
 </isscript>
 
 <figure class="component-figure">
-    <video autoplay muted loop class="w-100 full-width-video" id="full-width-video" data-desktop="${pdict.height_desktop}" data-mobile="${pdict.height_mobile}">
-        <source src="${pdict.video_url}" type="video/mp4" />
+    <video autoplay muted playsinline loop class="w-100 full-width-video" id="full-width-video" data-desktop="${pdict.height_desktop}" data-mobile="${pdict.height_mobile}">
+        <source src="${pdict.video_url_mp4}" type="video/mp4" />
+        <source src="${pdict.video_url_ogg}" type="video/ogg" />
     </video>
 
     <isif condition="${pdict.text_headline}">

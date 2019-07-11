@@ -18,13 +18,8 @@ module.exports.render = function (context) {
         model.text_headline = content.text_headline;
     }
 
-    if (content.video) {
-        model.video_url = content.video.getURL();
-    }
-
-    if (content.video_url) {
-        model.video_url = content.video_url;
-    }
+    model.video_url_mp4 = content.video_url_mp4;
+    model.video_url_ogg = content.video_url_ogg;
 
     // eslint-disable-next-line no-undef
     model.height_desktop = !empty(content.height_desktop) ? content.height_desktop : 700;

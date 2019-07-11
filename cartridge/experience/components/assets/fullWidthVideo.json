@@ -9,16 +9,16 @@
       "description": "The visual display of the banner video in the background. Only mp4 format supported",
       "attribute_definitions": [
         {
-          "id": "video",
-          "name": "Video",
-          "type": "file",
-          "required": false
-        },
-        {
-          "id": "video_url",
+          "id": "video_url_mp4",
           "name": "Video Url",
           "type": "string",
-          "required": false
+          "required": true
+        },
+        {
+          "id": "video_url_ogg",
+          "name": "Video Url For IOS deveices",
+          "type": "string",
+          "required": true
         }
 
       ]
