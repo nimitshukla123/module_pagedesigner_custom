@@ -2,6 +2,7 @@
 
 var RegionModelRegistry = require('*/cartridge/experience/utilities/RegionModelRegistry.js');
 
+// eslint-disable-next-line require-jsdoc
 function parseRenderParameters(renderParametersJson) {
     var renderParameters = {};
     if (renderParametersJson) {
